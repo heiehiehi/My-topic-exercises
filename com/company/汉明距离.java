@@ -1,10 +1,11 @@
 package com.company;
 
-public class 位1的个数 {
+public class 汉明距离 {
     public static void main(String[] args) {
-        System.out.println(hammingWeight(-3));
+        System.out.println(hammingDistance(3,1));
     }
-    public static int hammingWeight(int n) {
+    public static int hammingDistance(int x, int y) {
+        int n = x^y;
         int t;
         int cnt = 31;
         int count = 0;
